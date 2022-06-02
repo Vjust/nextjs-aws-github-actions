@@ -12,10 +12,12 @@ jobs:
     steps:
       - uses: actions/checkout@v3
       - uses: actions/setup-node@v3
-      - name: Install NPM dependencies
+      - name: Install NPM dependencies-0
         run: npm install
-      - name: Install NPM dependencies2        
-        run: npm install -g serverless
+      - name: Install NPM dependencies-1        
+        run: npm install -g serverless        
+      - name: Install NPM dependencies-2        
+        run: npm install -g serverless@cli
       - name: Configure AWS credentials
         uses: aws-actions/configure-aws-credentials@v1
         with:
